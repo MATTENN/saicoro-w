@@ -14,6 +14,7 @@
 		A95EE91021C8E249008C7A8D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A95EE90E21C8E249008C7A8D /* LaunchScreen.storyboard */; };
 		A95EE91B21C8E249008C7A8D /* saicoro_wTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A95EE91A21C8E249008C7A8D /* saicoro_wTests.swift */; };
 		A95EE92621C8E249008C7A8D /* saicoro_wUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A95EE92521C8E249008C7A8D /* saicoro_wUITests.swift */; };
+		A95EE93421C8E8F3008C7A8D /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A95EE93321C8E8F3008C7A8D /* SecondViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +48,7 @@
 		A95EE92121C8E249008C7A8D /* saicoro-wUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "saicoro-wUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A95EE92521C8E249008C7A8D /* saicoro_wUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = saicoro_wUITests.swift; sourceTree = "<group>"; };
 		A95EE92721C8E249008C7A8D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A95EE93321C8E8F3008C7A8D /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +105,7 @@
 				A95EE90C21C8E249008C7A8D /* Assets.xcassets */,
 				A95EE90E21C8E249008C7A8D /* LaunchScreen.storyboard */,
 				A95EE91121C8E249008C7A8D /* Info.plist */,
+				A95EE93321C8E8F3008C7A8D /* SecondViewController.swift */,
 			);
 			path = "saicoro-w";
 			sourceTree = "<group>";
@@ -256,6 +259,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A95EE93421C8E8F3008C7A8D /* SecondViewController.swift in Sources */,
 				A95EE90821C8E247008C7A8D /* ViewController.swift in Sources */,
 				A95EE90621C8E247008C7A8D /* AppDelegate.swift in Sources */,
 			);
