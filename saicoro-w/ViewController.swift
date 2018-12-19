@@ -17,8 +17,17 @@ class ViewController: UIViewController {
     
     @IBOutlet weak var label1: UILabel!
     
-    @IBAction func unwindToTop(segue: UIStoryboardSegue){
+    @IBAction func unwindToTop(segue: UIStoryboardSegue, sender: Any?){
         //Second View Controllerから元に戻れるやつ
+        //if let second = segue.destination as? SecondViewController {
+        //    second.first = self
+        //}
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?){
+        if let second = segue.destination as? SecondViewController {
+            second.first = self
+        }
     }
     
     func overwriteLabel(text: String){

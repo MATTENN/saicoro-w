@@ -10,25 +10,17 @@ import UIKit
 
 class SecondViewController: UIViewController,UITextFieldDelegate {
 
+    @IBOutlet weak var field1: UITextField!
+    @IBOutlet weak var label1: UILabel!
+    
+    weak var first: ViewController?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
         self.field1.delegate = self
     }
-    
-    @IBOutlet weak var field1: UITextField!
-    @IBOutlet weak var label1: UILabel!
-    
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
 
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
         // キーボードを閉じる
@@ -36,12 +28,9 @@ class SecondViewController: UIViewController,UITextFieldDelegate {
         return true
     }
     
-    let First = UIStoryboard(name: "Main", bundle: Bundle.main).instantiateViewController(withIdentifier: "ViewController") as! ViewController
-    
     @IBAction func reflect(_ sender: Any) {
         label1.text = field1.text!
-        First.overwriteLabel(text: field1.text ?? "none")
-        
+        first?.overwriteLabel(text: field1.text ?? "none")
     }
     
     @IBAction func reflectsecond(_ sender: Any) {
@@ -53,6 +42,8 @@ class SecondViewController: UIViewController,UITextFieldDelegate {
         field1.resignFirstResponder()
     }
     
-    
+    @IBAction func dismiss(_ sender: Any) {
+        self.dismiss(animated: true,completion: nil)
+    }
 
 }

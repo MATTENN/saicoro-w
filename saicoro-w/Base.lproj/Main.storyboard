@@ -124,7 +124,8 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="戻る"/>
                                 <connections>
-                                    <segue destination="ux8-6Z-Via" kind="unwind" unwindAction="unwindToTopWithSegue:" id="1iV-T4-4jO"/>
+                                    <action selector="dismiss:" destination="Crq-Ll-trw" eventType="touchUpInside" id="9dq-7g-uNC"/>
+                                    <segue destination="ux8-6Z-Via" kind="unwind" unwindAction="unwindToTopWithSegue:sender:" id="cMb-mk-2f6"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qRL-uY-X9E">
@@ -148,7 +149,7 @@
                         <viewLayoutGuide key="safeArea" id="qCQ-NK-WMF"/>
                     </view>
                     <connections>
-                        <outlet property="field1" destination="8pA-nw-tvd" id="KDb-vc-SvK"/>
+                        <outlet property="field1" destination="8pA-nw-tvd" id="b9n-qA-xpC"/>
                         <outlet property="label1" destination="tZh-pV-rjQ" id="Bv0-iw-gQa"/>
                     </connections>
                 </viewController>
